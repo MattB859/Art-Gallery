@@ -1,10 +1,125 @@
-*{  
+* {
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
 
-html{
+html {
     height: 100%;
+    padding: 2rem;
 }
 
+.line-break{
+    margin-top: 5rem;
+    height: 2px !important;
+    color: rgb(0, 0, 0);
+
+}
+
+.header{
+    padding: 25px 0;
+}
+
+/* -------------- navbar styling */
+.navbar, li, a {
+    font-size: 20px;
+    color: black;
+    display: block;
+    text-decoration: none;
+}
+
+.menu {
+    margin-top: 10px;
+    float: right;
+    cursor: pointer;
+}
+
+
+/* -------------- main logo */
+.logo {
+    float: left;
+    font-size: 2.5rem;
+    color: black;
+    text-transform: uppercase
+}
+
+.banner img {
+    width: 100%;
+}
+
+/* -------------- search icon */
+.fa-search {
+    position: relative;
+    margin-top: 11px;
+    float: right;
+    right: 6rem;
+    cursor: pointer;
+    font-size: 35px;
+}
+
+/* --------------- menu bars*/
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    margin-right: -20px;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/* news events section */
+
+.new-image img{
+    width: 100%;
+}
+
+.title{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+/* media query for small mobile screen size */
+@media only screen and (max-width: 500px){
+
+    .header {
+        padding: 0;
+    }
+    
+    .logo{
+        font-size: 20px;
+        line-height: 3;
+    }
+
+    .fa-search{
+        font-size: 25px;
+        line-height: 1.4;
+        right: 5rem;
+    }
+
+    .bar1,
+    .bar2,
+    .bar3{
+        line-height: 2;
+        background-color: #333;
+        margin: 6px 0;
+        margin-right: -20px;
+        transition: 0.4s;
+    }
+}
