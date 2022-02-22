@@ -39,7 +39,7 @@ html {
 /* -------------- main logo */
 .logo {
     float: left;
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: black;
     text-transform: uppercase
 }
@@ -93,6 +93,27 @@ html {
 .title{
     font-size: 2rem;
     font-weight: 600;
+}
+
+.view-all{
+    float: right;
+    font-size: 25px;
+}
+
+.view-all:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+.caption-text{
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.news-events p{
+    font-weight: 600;
+    color: rgb(102, 102, 102);
 }
 
 /* media query for small mobile screen size */
