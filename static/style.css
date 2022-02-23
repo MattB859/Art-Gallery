@@ -9,6 +9,7 @@ html {
     height: 100%;
 
 }
+
 .wrapper{
     padding: 2rem;
 }
@@ -20,20 +21,24 @@ html {
 
 }
 
-
-
-/* -------------- navbar styling */
-.navbar, li, a {
-    font-size: 20px;
-    color: black;
-    display: block;
-    text-decoration: none;
+button{
+    margin-right: -30px;
+    background-color: #fff;
+    width: 40px;
+    border: none;
+    z-index: 99999;
 }
 
-.menu {
+/* -------------- navbar styling */
+.navbar{
+    display: block;
+    overflow: hidden;
+}
+
+ul li{
     margin-top: 10px;
-    float: right;
-    cursor: pointer;
+    display: block;
+    text-decoration: none;
 }
 
 
@@ -42,6 +47,7 @@ html {
     float: left;
     font-size: 3rem;
     color: black;
+    text-decoration: none;
     text-transform: uppercase
 }
 
@@ -54,21 +60,78 @@ html {
     position: relative;
     margin-top: 11px;
     float: right;
-    right: 6rem;
+    right: 5rem;
     cursor: pointer;
     font-size: 35px;
 }
 
+/* -------------- Nav menu content */
+.overlay {
+    height: 0;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: -50px;
+    left: 0;
+    padding: 25px;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0, 0, 0, 0.979);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+.overlay-content{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+}
+
+.overlay-content ul{
+    margin-top: 10rem;
+}
+  
+.overlay a {
+    padding: 5px;
+    text-decoration: none;
+    border-bottom: 1px solid; 
+    font-size: 40px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #ffffff;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 60px;
+    right: 35px;
+    border-bottom: none;
+    font-size: 60px;
+}
+
 /* --------------- menu bars*/
+
+.menu{
+    margin-top: 10px;
+    float: right;
+    cursor: pointer;
+    z-index: 9999999999999;
+}
+
 .bar1,
 .bar2,
 .bar3 {
     width: 35px;
     height: 5px;
-    background-color: #333;
+    background-color: rgb(43, 43, 43);
     margin: 6px 0;
     margin-right: -20px;
     transition: 0.4s;
+    z-index: 99999999999999;
 }
 
 .change .bar1 {
@@ -85,8 +148,7 @@ html {
     transform: rotate(45deg) translate(-8px, -8px);
 }
 
-/* news events section */
-
+/* ------------ news events section */
 .new-image img{
     width: 100%;
 }
@@ -117,8 +179,12 @@ html {
     color: rgb(102, 102, 102);
 }
 
-/* ----------------- Footer styling*/
+.banner p{
+    font-size: 20px;
+}
 
+
+/* ----------------- Footer styling*/
 .footer {
     left: 0;
     bottom: 0;
@@ -136,7 +202,6 @@ html {
 }
 
 .footer p{
-  
     font-size: 20px;
 }
 
@@ -145,25 +210,43 @@ html {
     color: #fff;
 }
 
+.arrow{
+    position: relative;
+    width: 20px;
+    height: 25px;
+}
 
+.artist p{
+    cursor: pointer;
+}
+
+.artist p:hover{
+    text-decoration: underline;
+    color: rgb(46, 109, 134);
+}
 
 
 /* media query for small mobile screen size */
 @media only screen and (max-width: 500px){
-
+    
+    /* Wrapper adds padding to body*/
+    .wrapper{
+        padding: 1rem;
+    }
+    
     .header {
         padding: 0;
     }
-    
+
     .logo{
         font-size: 20px;
         line-height: 3;
     }
 
     .fa-search{
-        font-size: 25px;
-        line-height: 1.4;
-        right: 5rem;
+        font-size: 27px;
+        margin-top: 15px;
+        right: 4rem;
     }
 
     .bar1,
@@ -174,5 +257,80 @@ html {
         margin: 6px 0;
         margin-right: -20px;
         transition: 0.4s;
+        z-index: 99999999999;
+    }
+
+    .video{
+        width: 100%;
+        height: 200px;
+    }
+
+    .title{
+        font-size: 21px;
+        margin-top: 8px;
+        margin-bottom: 0;
+    }
+
+    .overlay a {
+        font-size: 20px; 
+    }
+
+    .overlay {overflow-y: auto;}
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+
+    .overlay .closebtn {
+        position: absolute;
+        top: 40px;
+        right: 15px;
+        border-bottom: none;
+        font-size: 60px;
+    }
+
+    .overlay-content ul{
+        margin: 10rem 0;
+        padding: 0;
+    }
+
+    .footer {
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding: 1rem;
+        color: aliceblue;
+        background-color: #333;
+    }
+
+    .footer p{
+        font-size: 15px;
+    }
+
+    .footer h4{
+        font-size: 18px;
+    }
+
+    .footer li {
+        display: block;
+        margin: 8px 0;
+        font-size: 20px;
+    }
+
+
+}
+
+
+/* media query for smaller mobile screen size */
+@media only screen and (max-width: 350px){
+    .navbar{
+            overflow: hidden;
+    }
+
+    .overlay-content ul{
+        margin: 7rem 0;
+        padding: 0;
     }
 }
