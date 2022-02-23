@@ -7,6 +7,9 @@
 
 html {
     height: 100%;
+
+}
+.wrapper{
     padding: 2rem;
 }
 
@@ -17,9 +20,7 @@ html {
 
 }
 
-.header{
-    padding: 25px 0;
-}
+
 
 /* -------------- navbar styling */
 .navbar, li, a {
@@ -115,6 +116,37 @@ html {
     font-weight: 600;
     color: rgb(102, 102, 102);
 }
+
+/* ----------------- Footer styling*/
+
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 2rem;
+    color: aliceblue;
+    background-color: #333;
+}
+
+.footer li{
+    font-weight: bold;
+    margin: 0 20px 0 0;
+    display: inline-block;
+    color: aliceblue;
+}
+
+.footer p{
+  
+    font-size: 20px;
+}
+
+.footer-line{
+    height: 2px !important;
+    color: #fff;
+}
+
+
+
 
 /* media query for small mobile screen size */
 @media only screen and (max-width: 500px){

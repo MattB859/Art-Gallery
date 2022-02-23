@@ -16,108 +16,177 @@
 <body>
 
     <!-- header & navigation custom code by developer -->
-    <header class="header">
-        <div class="row">
-            <div class="col col-lg-12">
-                <a class="logo" href="#">art gallery</a>
-                <nav class="navbar d-none">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Art & Artists</a></li>
-                        <li><a href="#">Exhibitions</a></li>
-                        <li><a href="#">News</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Private Area</a></li>
-                    </ul>
-                </nav>
-                <i class="fa fa-search"></i>
-                <div class="menu" onclick="myFunction(this)">
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div>
+    <div class="wrapper">
+        <header class="header">
+            <div class="row">
+                <div class="col col-lg-12">
+                    <a class="logo" href="#">art gallery</a>
+                    <nav class="navbar d-none">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Art & Artists</a></li>
+                            <li><a href="#">Exhibitions</a></li>
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Private Area</a></li>
+                        </ul>
+                    </nav>
+                    <i class="fa fa-search"></i>
+                    <div class="menu" onclick="myFunction(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <!-- image carousel section -->
+        <section>
+            <figure class="banner">
+                <img src="/static/media/art-banner-1.png" alt="art banner">
+                <figcaption class="caption-text">Anselm Kiefer: Walhalla</figcaption>
+            </figure>
+        </section>
+
+        <hr class="line-break">
+
+        <!-- News & Events section -->
+        <section class="new-image news-events">
+            <div class="row">
+                <div class="col-6">
+                    <h1 class="title">News & Events</h1>
+                </div>
+                <div class="col-6">
+                    <a class="view-all" href="#">View all</a>
                 </div>
             </div>
 
-
-        </div>
-    </header>
-
-    <!-- image carousel section -->
-    <section>
-        <figure class="banner">
-            <img src="/static/media/art-banner-1.png" alt="art banner">
-            <figcaption class="caption-text">Anselm Kiefer: Walhalla</figcaption>
-        </figure>
-    </section>
-
-    <hr class="line-break">
-
-    <!-- News & Events section -->
-    <section class="new-image news-events">
-        <div class="row">
-            <div class="col-6">
-                <h1 class="title">News & Events</h1>
+            <div class="row">
+                <div class="col col-lg-4 col-12">
+                    <figure>
+                        <img src="/static/media/news-1.png" alt="news image">
+                        <figcaption class="caption-text">Exhibition: He Xiangyu monograph released by Distanz
+                        </figcaption>
+                    </figure>
+                    <p>From March 2016</p>
+                    <p>He Xiangyu and Liu Wei are among 74 international artists
+                        from 33 countries choosen to feature in the Yinchuan
+                        Biennale 2016
+                    </p>
+                </div>
+                <div class="col col-lg-4 col-12">
+                    <figure>
+                        <img src="/static/media/news-2.png" alt="news image">
+                        <figcaption class="caption-text">Exhibition: Runa Islam at SFMOMA, San Francisco</figcaption>
+                    </figure>
+                    <p>From March 2016</p>
+                    <p>'Verso' SFMOMA's solo presentation of Bangladeshi-born
+                        British artist Runa Islam, features the US premiere of
+                        Cabinet of Prototypes [2009-19]
+                    </p>
+                </div>
+                <div class="col col-lg-4 col-12">
+                    <figure>
+                        <img src="/static/media/news-3.png" alt="news image">
+                        <figcaption class="caption-text">Preview: White Cube Mason's Yard</figcaption>
+                    </figure>
+                    <p>From March 2016</p>
+                    <p>Join us at Mason's Yard, London for the preview ofthe new Park
+                        Seo-Bo exhibition curated by Katharine Kostyál.
+                        Curated by Katharine Kostyál
+                    </p>
+                </div>
             </div>
-            <div class="col-6">
-                <a class="view-all" href="#">View all</a>
-            </div>
-        </div>
+        </section>
 
-        <div class="row">
-            <div class="col col-lg-4 col-12">
-                <figure>
-                    <img src="/static/media/news-1.png" alt="news image">
-                    <figcaption class="caption-text">Exhibition: He Xiangyu monograph released by Distanz</figcaption>
-                </figure>
-                <p>From March 2016</p>
-                <p>He Xiangyu and Liu Wei are among 74 international artists
-                    from 33 countries choosen to feature in the Yinchuan
-                    Biennale 2016
-                </p>
-            </div>
-            <div class="col col-lg-4 col-12">
-                <figure>
-                    <img src="/static/media/news-2.png" alt="news image">
-                    <figcaption class="caption-text">Exhibition: Runa Islam at SFMOMA, San Francisco</figcaption>
-                </figure>
-                <p>From March 2016</p>
-                <p>'Verso' SFMOMA's solo presentation of Bangladeshi-born
-                    British artist Runa Islam, features the US premiere of
-                    Cabinet of Prototypes [2009-19]
-                </p>
-            </div>
-            <div class="col col-lg-4 col-12">
-                <figure>
-                    <img src="/static/media/news-3.png" alt="news image">
-                    <figcaption class="caption-text">Preview: White Cube Mason's Yard</figcaption>
-                </figure>
-                <p>From March 2016</p>
-                <p>Join us at Mason's Yard, London for the preview ofthe new Park
-                    Seo-Bo exhibition curated by Katharine Kostyál.
-                    Curated by Katharine Kostyál
-                </p>
-            </div>
-        </div>
-    </section>
+        <hr class="line-break">
 
-    <hr class="line-break">
-
-    <!-- YouTube video link -->
-    <section class="mt-4">
-        <div class="row">
-            <div class="col-6">
-                <h1 class="title">Channel</h1>
+        <!-- YouTube video link -->
+        <section class="mt-4">
+            <div class="row">
+                <div class="col-6">
+                    <h1 class="title">Channel</h1>
+                </div>
+                <div class="col-6">
+                    <a class="view-all" href="#">View all</a>
+                </div>
             </div>
-            <div class="col-6">
-                <a class="view-all" href="#">View all</a>
-            </div>
-        </div>
-        <iframe width="100%" height="800" src="https://www.youtube.com/embed/vlm5tgistqA"></iframe>"
+            <iframe width="100%" height="800" src="https://www.youtube.com/embed/vlm5tgistqA"></iframe>
+        </section>
 
-    </section>
+        <hr class="line-break">
+
+        <section class="artist">
+            <h1 class="title mb-4">Artists</h1>
+            <div class="row">
+                <div class="col-3">
+                    <p>Franz Ackermann</p>
+                    <p>Etel Adnan</p>
+                    <p>Darren Almond</p>
+                    <p>Franz Ackermann</p>
+                    <p>Franz Ackermann</p>
+                    <p>Etel Adnan</p>
+                    <p>Darren Almond</p>
+                    <p>Franz Ackermann</p>
+                    <p>Franz Ackermann</p>
+                    <p>Etel Adnan</p>
+                    <p>Darren Almond</p>
+                    <p>Franz Ackermann</p>
+                </div>
+                <div class="col-3">
+                    <p>Franz Ackermann</p>
+                    <p>Etel Adnan</p>
+                    <p>Darren Almond</p>
+                    <p>Franz Ackermann</p>
+                    <p>Franz Ackermann</p>
+                    <p>Etel Adnan</p>
+                    <p>Darren Almond</p>
+                    <p>Franz Ackermann</p>
+                    <p>Franz Ackermann</p>
+                    <p>Etel Adnan</p>
+                    <p>Darren Almond</p>
+                    <p>Franz Ackermann</p>
+                </div>
+                <div class="col-3">
+                    <p>Franz Ackermann</p>
+                    <p>Etel Adnan</p>
+                    <p>Darren Almond</p>
+                    <p>Franz Ackermann</p>
+                    <p>Franz Ackermann</p>
+                    <p>Etel Adnan</p>
+                    <p>Darren Almond</p>
+                    <p>Franz Ackermann</p>
+                    <p>Franz Ackermann</p>
+                    <p>Etel Adnan</p>
+                    <p>Darren Almond</p>
+                    <p>Franz Ackermann</p>
+                </div>
+                <div class="col-3">
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <li>Newsletter</li>
+        <li>Contact</li>
+        <li>Press room</li>
+
+        <hr class="footer-line">
+
+        <h4>Art Gallery</h4>
+        <p>38-40 Suthwark Street</p>
+        <p>London SE1 1UN</p>
+        <p>Telephone +44 20 74905337</p>
+        
+        <hr class="footer-line">
+        <p class="text-center">&#169 2022 EC1 GALLERY</p>
+    </footer>
 
     <script src="/static/main.js"></script>
 
 </body>
-
 </html>
