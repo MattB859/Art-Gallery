@@ -1,15 +1,13 @@
-* {
+*{
     margin: 0;
-    padding: 0;
+    padding: 0 ;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
 
 html {
     height: 100%;
-
 }
-
 
 .wrapper{
     padding: 4rem;
@@ -29,12 +27,6 @@ button{
     border: none;
     z-index: 99999;
 }
-
-.carousel-cell img {
-    display: block;
-    width: 100%;
-  }
-
 
 /* -------------- navbar styling */
 .navbar{
@@ -170,9 +162,15 @@ ul li{
 }
 
 .caption-text{
+    text-decoration: none;
+    color: #111;
     margin-top: 20px;
     font-size: 25px;
     font-weight: bold;
+}
+
+.banner a{
+    text-decoration: none;
 }
 
 .news-events p{
@@ -184,43 +182,24 @@ ul li{
     font-size: 20px;
 }
 
-/* Carousel for books */
-.carousel{
-    margin-top: 20px;
+/* Image carousel text with link underline hover*/
+.caption-text:hover{
+    cursor: pointer;
+    text-decoration: underline;
 }
 
-.owl-dots {
-    text-align: center;
-    margin-top: 20px;
-}
 
-.owl-dot {
-    height: 13px;
-    width: 13px;
-    margin: 0 5px;
-    outline: none !important;
-    border-radius: 50%;
-    border: 2px solid rgb(77, 77, 77) !important;
-    transition: all 0.6s ease;
+.channel-text{
+    font-weight: bold;
+    font-size: 20px;
 }
-
-.owl-dot.active {
-    width: 35px;
-    border-radius: 14px;
-}
-
-.owl-dot.active,
-.owl-dot:hover {
-    background: rgb(22, 22, 22) !important;
-}
-
 
 /* ----------------- Footer styling*/
 .footer {
     left: 0;
     bottom: 0;
     width: 100%;
-    padding: 4rem;
+    padding: 2rem;
     color: aliceblue;
     background-color: #333;
 }
@@ -249,9 +228,16 @@ ul li{
 
 .artist p{
     cursor: pointer;
+    line-height: 1;
 }
 
+.show-art{
+    display: none;
+}
+
+
 .artist p:hover{
+    display: block;
     text-decoration: underline;
     color: rgb(46, 109, 134);
 }
@@ -263,8 +249,15 @@ ul li{
     float: right;
     right: 4rem;
 }
+#newsEvents img{
+    transition: 0.6s ease;
+}
+#newsEvents img:hover{
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.692), 0 6px 20px 0 rgba(0, 0, 0, 0.678);
+}
 
-/* Flickity Carousel */
+/* ------------------- Flickity Carousel */
 .carousel-cell {
     width: 100%;
     margin-right: 10px;
@@ -274,9 +267,9 @@ ul li{
 
 .flickity-prev-next-button {
     top: 50%;
-    width: 54px;
+    width: 44px;
     margin: 0;
-    height: 54px;
+    height: 44px;
     border-radius: 50%;
     transform: translateY(-50%);
 }
@@ -286,6 +279,52 @@ ul li{
     background: hsla(0,0%,100%,.75);
     border: none;
     color: #333;
+}
+
+.flickity-page-dots .dot {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 0 8px;
+    background: #333;
+    border-radius: 50%;
+    opacity: .25;
+    cursor: pointer;
+}
+
+
+/* media query for large screen size */
+@media only screen and (max-width: 1100px){
+    .video{
+        width: 100%;
+        height: 500px;
+    }
+}
+
+/* media query for tablet screen size */
+@media only screen and (max-width: 800px){
+    /* Wrapper adds padding to body*/
+    .wrapper{
+        padding: 2rem;
+    }
+    
+    .video{
+        width: 100%;
+        height: 400px;
+    }
+
+    .footer {
+        padding: 2rem;
+    }
+
+    .footer span{
+        text-transform: uppercase;
+        font-size: 18px;
+    }
+
+    .footer p{
+        font-size: 18px;
+    }
 }
 
 
@@ -299,11 +338,12 @@ ul li{
     
     .header {
         padding: 0;
+        margin-bottom: 5px;
     }
 
     .logo{
-        font-size: 20px;
-        line-height: 3;
+        font-size: 25px;
+        line-height: 2.5;
     }
 
     .fa-search{
@@ -325,14 +365,19 @@ ul li{
 
     .video{
         width: 100%;
-        height: 200px;
+        height: 210px;
     }
 
     .title{
         font-size: 20px;
-        margin-bottom: 5px;
+        margin: 0;   
     }
 
+    .channel-text{
+        font-weight: bold;
+        font-size: 17px;
+    }
+    
     .view-all{
         font-size: 18px;
         margin: 0;
@@ -367,16 +412,22 @@ ul li{
         left: 0;
         bottom: 0;
         width: 100%;
-        padding: 1rem;
+        padding: 0;
         color: aliceblue;
         background-color: #333;
     }
 
-    .footer p{
-        font-size: 15px;
+    .text-center{
+        font-weight: bold;
+        color: #c0c0c0;
+    }
+    
+    .footer span{
+        text-transform: uppercase;
+        font-size: 18px;
     }
 
-    .footer h4{
+    .footer p{
         font-size: 18px;
     }
 
@@ -391,7 +442,7 @@ ul li{
         position: relative;
         top: 0.5rem;
         float: right;
-        left: 1rem;
+        right: 1rem;
         font-size: 25px;
     }
 
@@ -411,6 +462,7 @@ ul li{
         border-radius: 50%;
         transform: translateY(-50%);
     }
+
     .flickity-button {
         position: absolute;
         background: hsla(0,0%,100%,.75);
@@ -418,10 +470,39 @@ ul li{
         color: #333;
     }
 
+    .banner p{
+        font-size: 17px;
+    }
+
+    .flickity-page-dots .dot {
+        width: 12px;
+        height: 12px;  
+    }
+
+    .bar1,
+    .bar2,
+    .bar3 {
+        width: 30px;
+        height: 3px;
+        background-color: rgb(15, 15, 15);
+        margin: 6px 0;
+        margin-right: -20px;
+        transition: 0.4s;
+        z-index: 99999999999999;
+    }
+
+    .fa-search {
+        position: relative;
+        top: 14px;
+        float: right;
+        right: 3.5rem;
+        cursor: pointer;
+        font-size: 25px;
+    }
 }
 
 
-/* media query for smaller mobile screen size */
+/* media query for small mobile screen size */
 @media only screen and (max-width: 350px){
     .navbar{
             overflow: hidden;
@@ -433,8 +514,39 @@ ul li{
     }
 
     .title{
-        font-size: 18px;
-        margin-top: 8px;
-        margin-bottom: 0;
+        font-size: 15px;
+        margin: 5px 0;
     }
+
+    .flickity-page-dots .dot {
+        width: 12px;
+        height: 12px;  
+    }
+
+    .logo{
+        font-size: 20px;
+        line-height: 3;
+    }
+
+    .bar1,
+    .bar2,
+    .bar3 {
+        width: 30px;
+        height: 3px;
+        background-color: rgb(15, 15, 15);
+        margin: 6px 0;
+        margin-right: -20px;
+        transition: 0.4s;
+        z-index: 99999999999999;
+    }
+
+    .fa-search {
+        position: relative;
+        top: 14px;
+        float: right;
+        right: 3.2rem;
+        cursor: pointer;
+        font-size: 24px;
+    }
+
 }

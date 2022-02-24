@@ -16,14 +16,12 @@
 
 <body>
     <!--custom code by developer -->
-
-    <div class="wrapper">
-
-        <!-- Header --> 
+    <div class="container">
+        <!-- Header -->
         <header class="header">
             <div class="row">
                 <div class="col-lg-12">
-                    <!-- Header logo --> 
+                    <!-- Header logo -->
                     <a class="logo" href="#">art gallery</a>
                     <!-- Search icon -->
                     <i class="fa fa-search"></i>
@@ -37,11 +35,11 @@
             </div>
         </header>
 
-        <!-- Navigation --> 
+        <!-- Navigation -->
         <nav class="navbar overlay overlay-content" id="myNav">
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#art-&-artists">Art & Artists</a></li>
+                <li><a href="#artists">Art & Artists</a></li>
                 <li><a href="#exhibitions">Exhibitions</a></li>
                 <li><a href="#news">News</a></li>
                 <li><a href="#about">About</a></li>
@@ -53,54 +51,54 @@
 
         <!-- Flickity Carousel -->
         <section class="banner" id="home">
-            <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
+            <div class="main-carousel" data-flickity='{ "autoPlay": true }'>
                 <div class="carousel-cell">
                     <figure>
                         <img src="/static/media/art-banner-1.png" alt="art gallery">
-                        <figcaption class="caption-text">Anselm Kiefer: Walhalla</figcaption>
+                        <a href="https://en.wikipedia.org/wiki/Anselm_Kiefer" target="_blank"><figcaption class="caption-text">Anselm Kiefer: Walhalla</figcaption></a> 
+                        <p>Until 12 February 2017, London</p>
                     </figure>
-                    <p>Until 12 February 2017, London</p>
+
                 </div>
                 <div class="carousel-cell">
                     <figure>
                         <img src="/static/media/art-banner-1.png" alt="art gallery">
                         <figcaption class="caption-text">Anselm Kiefer: Walhalla</figcaption>
+                        <p>Until 12 February 2017, London</p>
                     </figure>
-                    <p>Until 12 February 2017, London</p>
+
                 </div>
                 <div class="carousel-cell">
                     <figure>
                         <img src="/static/media/art-banner-1.png" alt="art gallery">
                         <figcaption class="caption-text">Anselm Kiefer: Walhalla</figcaption>
+                        <p>Until 12 February 2017, London</p>
                     </figure>
-                    <p>Until 12 February 2017, London</p>
+
                 </div>
             </div>
         </section>
 
         <!-- Line break -->
-        <hr class="line-break">
+        <hr class="line-break mt-5">
 
         <!-- News & Events section -->
-        <section class="new-image news-events" id="exhibitions">
-            <div class="row">
+        <section class="new-image p-0" id="newsEvents">
+            <div class="row mb-2">
                 <div class="col-6">
                     <h1 class="title">News & Events</h1>
                 </div>
                 <div class="col-6">
                     <a class="view-all" href="#">View all <svg class="arrow" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M5 13h11.86l-3.63 4.36a1 1 0 0 0 1.54 1.28l5-6a1.19 1.19 0 0 0 .09-.15c0-.05.05-.08.07-.13A1 1 0 0 0 20 12a1 1 0 0 0-.07-.36c0-.05-.05-.08-.07-.13a1.19 1.19 0 0 0-.09-.15l-5-6A1 1 0 0 0 14 5a1 1 0 0 0-.64.23 1 1 0 0 0-.13 1.41L16.86 11H5a1 1 0 0 0 0 2z" />
-                            </g>
-                            </g></svg></a>
-
+                    <path d="M5 13h11.86l-3.63 4.36a1 1 0 0 0 1.54 1.28l5-6a1.19 1.19 0 0 0 .09-.15c0-.05.05-.08.07-.13A1 1 0 0 0 20 12a1 1 0 0 0-.07-.36c0-.05-.05-.08-.07-.13a1.19 1.19 0 0 0-.09-.15l-5-6A1 1 0 0 0 14 5a1 1 0 0 0-.64.23 1 1 0 0 0-.13 1.41L16.86 11H5a1 1 0 0 0 0 2z" />
+                    </g></g></svg></a>
                 </div>
             </div>
 
             <div class="row">
                 <div class="col col-lg-4 col-12">
                     <figure>
-                        <img src="/static/media/news-1.png" alt="news image">
+                       <a href=""><img src="/static/media/news-1.png" alt="news image"></a> 
                         <figcaption class="caption-text">Exhibition: He Xiangyu monograph released by Distanz
                         </figcaption>
                     </figure>
@@ -135,35 +133,48 @@
             </div>
         </section>
 
-        <hr class="line-break">
+        <hr class="line-break mt-4">
 
         <!-- YouTube video link -->
         <section class="mt-4">
-            <div class="row">
+            <div class="row mb-2">
                 <div class="col-6">
                     <h1 class="title">Channel</h1>
                 </div>
                 <div class="col-6">
                     <a class="view-all" href="#">View all <svg class="arrow" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M5 13h11.86l-3.63 4.36a1 1 0 0 0 1.54 1.28l5-6a1.19 1.19 0 0 0 .09-.15c0-.05.05-.08.07-.13A1 1 0 0 0 20 12a1 1 0 0 0-.07-.36c0-.05-.05-.08-.07-.13a1.19 1.19 0 0 0-.09-.15l-5-6A1 1 0 0 0 14 5a1 1 0 0 0-.64.23 1 1 0 0 0-.13 1.41L16.86 11H5a1 1 0 0 0 0 2z" />
-                            </g>
-                            </g></svg></a>
+                        <path d="M5 13h11.86l-3.63 4.36a1 1 0 0 0 1.54 1.28l5-6a1.19 1.19 0 0 0 .09-.15c0-.05.05-.08.07-.13A1 1 0 0 0 20 12a1 1 0 0 0-.07-.36c0-.05-.05-.08-.07-.13a1.19 1.19 0 0 0-.09-.15l-5-6A1 1 0 0 0 14 5a1 1 0 0 0-.64.23 1 1 0 0 0-.13 1.41L16.86 11H5a1 1 0 0 0 0 2z" />
+                        </g></g></svg>
+                    </a>
                 </div>
             </div>
-            <iframe class="video" width="100%" height="800" src="https://www.youtube.com/embed/vlm5tgistqA"></iframe>
+            <div class="row">
+                <figure>
+                    <iframe class="video" width="100%" height="800"
+                        src="https://www.youtube.com/embed/vlm5tgistqA"></iframe>
+                </figure>
+                <div class="col-lg-6 col-sm-12">
+                    <p class="channel-text ">Anselm Kiefer in conversation with Tim Marlow in the Auditorium</p> 
+                </div>     
+                <div class="col-lg-6 col-sm-12">
+                    <p>In this film Anselm Kiefer discusses his work and
+                        his exhibition 'Walhalla' at White Cube Bermondsey
+                        with Tim Marlow.
+                    </p>
+                </div>     
+            </div>
         </section>
 
-        <hr class="line-break">
+        <hr class="line-break mt-4">
 
         <!-- Artists Section -->
-        <section class="artist" id="artists">
+        <section class="artist mb-5">
             <h1 class="title mb-4">Artists</h1>
-            <div class="row">
+            <div class="row" onmouseover="showArt()" onmouseout="removeArt()">
                 <div class="col-lg-3">
-                    <p>Franz Ackermann</p>
-                    <p>Etel Adnan</p>
-                    <p>Darren Almond</p>
+                    <p class="demo">Franz Ackermann</p>
+                    <p class="demo">Etel Adnan</p>
+                    <p class="demo">Darren Almond</p>
                     <p>Ellen Altfest</p>
                     <p>Michael Armitage</p>
                     <p>Miroslaw Balka</p>
@@ -217,8 +228,8 @@
                     <p>Jeff Wall</p>
                     <p>Cerith Wyn Evans</p>
                 </div>
-                <div class="col-lg-3">
-
+                <div class="col-lg-3 show-art">
+                    <img src="/static/media/art-photo.png" alt="art photo">
                 </div>
             </div>
         </section>
@@ -226,27 +237,29 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="row">
-            <div class="col-6">
-                <li>Newsletter</li>
-                <li>Contact</li>
-                <li>Press room</li>
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <li>Newsletter</li>
+                    <li>Contact</li>
+                    <li>Press room</li>
+                </div>
+                <div class="col-6 ">
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-facebook-f"></i>
+                </div>
             </div>
-            <div class="col-6">
-                <i class="fa fa-twitter"></i>
-                <i class="fa fa-facebook-f"></i>
-            </div>
+
+            <hr class="footer-line">
+
+            <p><span>Art Gallery</span></p>
+            <p>38-40 Suthwark Street</p>
+            <p>London SE1 1UN</p>
+            <p>Telephone +44 20 74905337</p>
+
+            <hr class="footer-line">
+            <p class="text-center mb-0">&#169 2022 EC1 GALLERY</p>
         </div>
-
-        <hr class="footer-line">
-
-        <h4>Art Gallery</h4>
-        <p>38-40 Suthwark Street</p>
-        <p>London SE1 1UN</p>
-        <p>Telephone +44 20 74905337</p>
-
-        <hr class="footer-line">
-        <p class="text-center">&#169 2022 EC1 GALLERY</p>
     </footer>
 
     <script src="/static/main.js"></script>
@@ -254,4 +267,5 @@
     <script src="https://kit.fontawesome.com/568d63d06b.js" crossorigin="anonymous"></script>
 
 </body>
+
 </html>
