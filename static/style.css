@@ -10,8 +10,9 @@ html {
 
 }
 
+
 .wrapper{
-    padding: 2rem;
+    padding: 4rem;
 }
 
 .line-break{
@@ -29,8 +30,15 @@ button{
     z-index: 99999;
 }
 
+.carousel-cell img {
+    display: block;
+    width: 100%;
+  }
+
+
 /* -------------- navbar styling */
 .navbar{
+   
     display: block;
     overflow: hidden;
 }
@@ -58,7 +66,7 @@ ul li{
 /* -------------- search icon */
 .fa-search {
     position: relative;
-    margin-top: 11px;
+    top: 15px;
     float: right;
     right: 5rem;
     cursor: pointer;
@@ -74,31 +82,37 @@ ul li{
     top: -50px;
     left: 0;
     padding: 25px;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0, 0, 0, 0.979);
+    background-color: #111;
     overflow-x: hidden;
     transition: 0.5s;
-  }
-  
+}
+
 .overlay-content{
     position: absolute;
     width: 100%;
     text-align: center;
     margin-top: 0;
+    z-index: 999999999;
 }
 
 .overlay-content ul{
-    margin-top: 10rem;
+    margin: 10rem 0;
+    padding: 0 3rem;
 }
-  
+
 .overlay a {
     padding: 5px;
     text-decoration: none;
-    border-bottom: 1px solid; 
     font-size: 40px;
     color: #818181;
     display: block;
     transition: 0.3s;
+   
+}
+
+.overlay li{
+    border-bottom: 1px rgb(161, 161, 161) solid; 
+   
 }
 
 .overlay a:hover, .overlay a:focus {
@@ -112,7 +126,6 @@ ul li{
     border-bottom: none;
     font-size: 60px;
 }
-
 /* --------------- menu bars*/
 
 .menu{
@@ -125,28 +138,15 @@ ul li{
 .bar1,
 .bar2,
 .bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: rgb(43, 43, 43);
+    width: 40px;
+    height: 4px;
+    background-color: rgb(15, 15, 15);
     margin: 6px 0;
     margin-right: -20px;
     transition: 0.4s;
     z-index: 99999999999999;
 }
 
-.change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
-}
-
-.change .bar2 {
-    opacity: 0;
-}
-
-.change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);
-}
 
 /* ------------ news events section */
 .new-image img{
@@ -159,13 +159,14 @@ ul li{
 }
 
 .view-all{
+    color: black;
     float: right;
     font-size: 25px;
+    text-decoration: none;
 }
 
 .view-all:hover{
     text-decoration: underline;
-    color: black;
 }
 
 .caption-text{
@@ -183,13 +184,43 @@ ul li{
     font-size: 20px;
 }
 
+/* Carousel for books */
+.carousel{
+    margin-top: 20px;
+}
+
+.owl-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.owl-dot {
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none !important;
+    border-radius: 50%;
+    border: 2px solid rgb(77, 77, 77) !important;
+    transition: all 0.6s ease;
+}
+
+.owl-dot.active {
+    width: 35px;
+    border-radius: 14px;
+}
+
+.owl-dot.active,
+.owl-dot:hover {
+    background: rgb(22, 22, 22) !important;
+}
+
 
 /* ----------------- Footer styling*/
 .footer {
     left: 0;
     bottom: 0;
     width: 100%;
-    padding: 2rem;
+    padding: 4rem;
     color: aliceblue;
     background-color: #333;
 }
@@ -225,6 +256,38 @@ ul li{
     color: rgb(46, 109, 134);
 }
 
+.fa, .fa-facebook, .fa-twitter{
+    position: relative;
+    margin: 0 20px 0 0;
+    font-size: 30px;
+    float: right;
+    right: 4rem;
+}
+
+/* Flickity Carousel */
+.carousel-cell {
+    width: 100%;
+    margin-right: 10px;
+    border-radius: 5px;
+    counter-increment: carousel-cell;
+}
+
+.flickity-prev-next-button {
+    top: 50%;
+    width: 54px;
+    margin: 0;
+    height: 54px;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+.flickity-button {
+    position: absolute;
+    background: hsla(0,0%,100%,.75);
+    border: none;
+    color: #333;
+}
+
 
 /* media query for small mobile screen size */
 @media only screen and (max-width: 500px){
@@ -244,9 +307,9 @@ ul li{
     }
 
     .fa-search{
-        font-size: 27px;
-        margin-top: 15px;
-        right: 4rem;
+        font-size: 29px;
+        top: 15px;
+        right: 3.5rem;
     }
 
     .bar1,
@@ -266,9 +329,13 @@ ul li{
     }
 
     .title{
-        font-size: 21px;
-        margin-top: 8px;
-        margin-bottom: 0;
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .view-all{
+        font-size: 18px;
+        margin: 0;
     }
 
     .overlay a {
@@ -319,6 +386,37 @@ ul li{
         font-size: 20px;
     }
 
+    .fa-facebook-f, 
+    .fa-twitter{
+        position: relative;
+        top: 0.5rem;
+        float: right;
+        left: 1rem;
+        font-size: 25px;
+    }
+
+    .caption-text{
+        font-size: 18px;
+    }
+
+    .carousel-cell img {
+        width: 100%;
+      }
+
+    .flickity-prev-next-button {
+        top: 35%;
+        width: 44px;
+        margin: 0;
+        height: 44px;
+        border-radius: 50%;
+        transform: translateY(-50%);
+    }
+    .flickity-button {
+        position: absolute;
+        background: hsla(0,0%,100%,.75);
+        border: none;
+        color: #333;
+    }
 
 }
 
@@ -332,5 +430,11 @@ ul li{
     .overlay-content ul{
         margin: 7rem 0;
         padding: 0;
+    }
+
+    .title{
+        font-size: 18px;
+        margin-top: 8px;
+        margin-bottom: 0;
     }
 }
