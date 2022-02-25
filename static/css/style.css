@@ -320,6 +320,12 @@ a {
     opacity: .25;
     cursor: pointer;
 }
+
+.flickity-page-dots .dot:hover{
+    background-color: #f12525;
+    opacity: 1;
+}
+
 /* ---------------- end */
 
 /* ------------- Search Form  */
