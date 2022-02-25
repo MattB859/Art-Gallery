@@ -32,6 +32,7 @@ button {
     display: block;
     overflow: hidden;
 }
+/* ---------------- end */
 
 ul li {
     margin-top: 10px;
@@ -40,6 +41,7 @@ ul li {
 }
 
 a {
+    color: #111;
     text-decoration: none;
 }
 
@@ -47,10 +49,11 @@ a {
 .logo {
     float: left;
     font-size: 3rem;
-    color: black;
+    color: rgb(27, 27, 27);
     text-decoration: none;
     text-transform: uppercase
 }
+/* ---------------- end */
 
 .banner img {
     width: 100%;
@@ -72,13 +75,15 @@ a {
     width: 0;
     position: fixed;
     z-index: 1;
-    top: -50px;
+    top: -80px;
     left: 0;
     padding: 25px;
-    background-color: #111;
+    box-shadow: 20px 10px 20px rgba(0, 0, 0, 0.301);
+    background-color: rgb(245, 245, 245);
     overflow-x: hidden;
     transition: 0.5s;
 }
+
 
 .overlay-content {
     position: absolute;
@@ -96,21 +101,20 @@ a {
 .overlay a {
     padding: 5px;
     text-decoration: none;
-    font-size: 40px;
-    color: #818181;
+    font-size: 60px;
+    color: #383838;
     display: block;
     transition: 0.3s;
-
 }
 
 .overlay li {
-    border-bottom: 1px rgb(161, 161, 161) solid;
+    border-bottom: 2px rgb(161, 161, 161) solid;
 
 }
 
 .overlay a:hover,
 .overlay a:focus {
-    color: #ffffff;
+    color: #f12525;
 }
 
 .overlay .closebtn {
@@ -120,9 +124,9 @@ a {
     border-bottom: none;
     font-size: 60px;
 }
+/* ---------------- end */
 
 /* --------------- menu bars*/
-
 .menu {
     margin-top: 10px;
     float: right;
@@ -142,6 +146,8 @@ a {
     z-index: 99999999999999;
 }
 
+
+/* ---------------- end */
 
 /* ------------ news events section */
 .new-image img {
@@ -173,14 +179,6 @@ a {
     font-weight: bold;
 }
 
-/* Add padding to text under video */
-.pad1 {
-    padding-right: 50px;
-}
-
-.pad2 {
-    padding-left: 50px;
-}
 
 .banner a {
     text-decoration: none;
@@ -196,8 +194,10 @@ a {
     font-size: 20px;
 }
 
-/* Image carousel text with link underline hover*/
-.caption-text:hover {
+/* -------------- links underline hover*/
+.caption-text:hover,
+.footer li:hover,
+#exhibitions p:hover{
     cursor: pointer;
     text-decoration: underline;
 }
@@ -233,6 +233,7 @@ a {
     height: 2px !important;
     color: #fff;
 }
+/* ---------------- end */
 
 .arrow {
     position: relative;
@@ -256,21 +257,19 @@ a {
     color: rgb(46, 109, 134);
 }
 
-.fa,
-.fa-facebook,
-.fa-twitter {
+.fa{
     position: relative;
-    margin: 0 20px 0 0;
+    margin: 0 30px 0 0;
     font-size: 30px;
     float: right;
     right: 4rem;
 }
 
-#newsEvents img {
-    transition: 0.6s ease;
+#exhibitions img {
+    transition: 0.5s ease;
 }
 
-#newsEvents img:hover {
+#exhibitions img:hover {
     cursor: pointer;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.692), 0 6px 20px 0 rgba(0, 0, 0, 0.678);
 }
@@ -286,7 +285,6 @@ a {
 .carousel-cell img{
     height: 800px;
 }
-
 
 .flickity-prev-next-button {
     top: 50%;
@@ -314,8 +312,9 @@ a {
     opacity: .25;
     cursor: pointer;
 }
+/* ---------------- end */
 
-/* Form control */
+/* ------------- Search Form  */
 form.form input[type=text] {
     padding: 10px;
     font-size: 17px;
@@ -323,9 +322,7 @@ form.form input[type=text] {
     float: left;
     width: 80%;
     background: #ffffff;
-  
 }
-
 
 form.form button {
     float: left;
@@ -338,7 +335,6 @@ form.form button {
     border: 2px solid grey;
     border-left: none;
     cursor: pointer;
-    
 }
 
 .card-body{
@@ -362,17 +358,7 @@ form.form::after {
     clear: both;
     display: table;
 }
-
-
-
-
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px) {
-    .modal-content {
-        width: 100%;
-    }
-}
-
+/*---------------- end */
 
 /* media query for large screen size */
 @media only screen and (max-width: 1100px) {
@@ -385,14 +371,12 @@ form.form::after {
         width: 100%;
         height: 600px;
     }
-
 }
 
 /* media query for tablet screen size */
 @media only screen and (max-width: 800px) {
 
-    /* Wrapper adds padding to body*/
-    .wrapper {
+    .wrapper { /* Wrapper adds padding to body*/
         padding: 2rem;
     }
 
@@ -435,12 +419,11 @@ form.form::after {
         border: none;
         color: #333;
     }
-    }
+}
 
 
 /* media query for small mobile screen size */
 @media only screen and (max-width: 500px) {
-
     /* Wrapper adds padding to body*/
     .wrapper {
         padding: 1rem;
@@ -638,7 +621,6 @@ form.form::after {
     }
 }
 
-
 /* media query for small mobile screen size */
 @media only screen and (max-width: 350px) {
     .navbar {
@@ -691,8 +673,8 @@ form.form::after {
         height: 220px;
     }
 
-     /* carousel prev/next button styling */
-     .flickity-prev-next-button {
+    /* carousel prev/next button styling */
+    .flickity-prev-next-button {
         top: 35%;
         width: 28px;
         margin: 0;
