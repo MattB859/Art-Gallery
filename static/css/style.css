@@ -64,6 +64,7 @@ a {
     position: relative;
     top: 15px;
     float: right;
+    color: #111;
     right: 5rem;
     cursor: pointer;
     font-size: 35px;
@@ -79,7 +80,7 @@ a {
     left: 0;
     padding: 25px;
     box-shadow: 20px 10px 20px rgba(0, 0, 0, 0.301);
-    background-color: rgb(245, 245, 245);
+    background-color: rgb(255, 255, 255);
     overflow-x: hidden;
     transition: 0.5s;
 }
@@ -257,12 +258,19 @@ a {
     color: rgb(46, 109, 134);
 }
 
-.fa{
+.fa-facebook-f,
+.fa-twitter{
     position: relative;
     margin: 0 30px 0 0;
     font-size: 30px;
+    color: #fff;
     float: right;
     right: 4rem;
+}
+
+.fa-facebook-f:hover,
+.fa-twitter:hover{
+    color: rgb(0, 153, 255);
 }
 
 #exhibitions img {
@@ -440,6 +448,7 @@ form.form::after {
     }
 
     .fa-search {
+        color: #111;
         font-size: 29px;
         top: 15px;
         right: 3.5rem;
@@ -451,7 +460,7 @@ form.form::after {
         line-height: 2;
         background-color: #333;
         margin: 6px 0;
-        margin-right: -20px;
+        margin-right: -40px;
         transition: 0.4s;
         z-index: 99999999999;
     }
@@ -489,16 +498,12 @@ form.form::after {
         margin: 0;
     }
 
-    .overlay a {
-        font-size: 20px;
-    }
-
     .overlay {
         overflow-y: auto;
     }
 
     .overlay a {
-        font-size: 20px
+        font-size: 25px
     }
 
     .overlay .closebtn {
@@ -509,8 +514,8 @@ form.form::after {
 
     .overlay .closebtn {
         position: absolute;
-        top: 40px;
-        right: 15px;
+        top: 70px;
+        right: 12px;
         border-bottom: none;
         font-size: 60px;
     }
@@ -530,7 +535,6 @@ form.form::after {
     }
 
     .info {
-       
         color: #888888da;
     }
 
